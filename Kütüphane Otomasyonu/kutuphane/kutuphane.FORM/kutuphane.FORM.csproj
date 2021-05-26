@@ -1,0 +1,184 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F122EF91-C55E-4AEA-BB00-B8C829A686AD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>kutuphane.FORM</RootNamespace>
+    <AssemblyName>kutuphane.FORM</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ZedGraph">
+      <HintPath>..\..\zedgraph_dll_v509_459\zedgraph_dll_v5.0.9\ZedGraph.dll</HintPath>
+    </Reference>
+    <Reference Include="ZedGraph.Web">
+      <HintPath>..\..\zedgraph_dll_v509_459\zedgraph_dll_v5.0.9\ZedGraph.Web.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="arayuzForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="arayuzForm.Designer.cs">
+      <DependentUpon>arayuzForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emanetIadeIslemlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emanetIadeIslemlerForm.Designer.cs">
+      <DependentUpon>emanetIadeIslemlerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="emanetKitapVerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="emanetKitapVerForm.Designer.cs">
+      <DependentUpon>emanetKitapVerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="grafikForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="grafikForm.Designer.cs">
+      <DependentUpon>grafikForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapDurumuForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapDurumuForm.Designer.cs">
+      <DependentUpon>kitapDurumuForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitapIslemlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitapIslemlerForm.Designer.cs">
+      <DependentUpon>kitapIslemlerForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="kitaplarForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="kitaplarForm.Designer.cs">
+      <DependentUpon>kitaplarForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="uyeIslemlerForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="uyeIslemlerForm.Designer.cs">
+      <DependentUpon>uyeIslemlerForm.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="arayuzForm.resx">
+      <DependentUpon>arayuzForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emanetIadeIslemlerForm.resx">
+      <DependentUpon>emanetIadeIslemlerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="emanetKitapVerForm.resx">
+      <DependentUpon>emanetKitapVerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="grafikForm.resx">
+      <DependentUpon>grafikForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapDurumuForm.resx">
+      <DependentUpon>kitapDurumuForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitapIslemlerForm.resx">
+      <DependentUpon>kitapIslemlerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="kitaplarForm.resx">
+      <DependentUpon>kitaplarForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="uyeIslemlerForm.resx">
+      <DependentUpon>uyeIslemlerForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\kutuphane.BLL\kutuphane.BLL.csproj">
+      <Project>{944c1f55-42f0-4ac7-bbab-8683e48ce0db}</Project>
+      <Name>kutuphane.BLL</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giris.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\uye_banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitap_banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emanetver_banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\emanetIade_banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitapDurumu_banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\grafik_banner.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kitapBilgileri_banner.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
